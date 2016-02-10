@@ -17,3 +17,10 @@ If the shapes are allowed to touch the ground, though, then health is lost and t
 ![Image of shapes going negative](http://i.imgur.com/txrZtfL.png "Title text")
 
 As you get more points, you'll level up. At first, there will only be one color to manage, but at every 10th level, a new color gets added. More colors to deal with means having to be more careful while trying to match colors!
+
+## About the Game
+This game was created as a personal project to teach myself about application states and state logic. I chose to create a game because games naturally have multiple states that the application could be in at any point in time. For example, each shape can have a total of 4 states: Neutral-Inactive, Neutral-Active, Positive, and Negative. This is important because the main control mechanic in the game is a collision function, which tells the game engine what to do by looking at the sources of the collision. For every collision that happens, the state of the source shapes has to be taken into account: for example, was the collision a positive + positive collision? Or was it a neutral + positive collision? Or could it have been a positive + ground collision? Thus, I had to rigorously test my application many times in order to ensure that every possible type of collision was taken into account. This app was an extremely rewarding project--not only did I learn a lot about application states and logic, I also got my first taste of game development.
+
+## Technologies Used
+#### HTML/CSS, Javascript, pixi.js, MatterJS
+The basic page layout was done in very sparse HTML/CSS. For the core physics engine, I chose MatterJS because it's extremely lightweight--it does exactly what I needed it to do, and not too much more. Although MatterJS has a built-in basic rendering engine, I instead chose to integrate it with pixi.js. This is because pixi.js has full WebGL support, which makes it hardware-accelerated (it runs faster).
