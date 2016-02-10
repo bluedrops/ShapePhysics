@@ -513,7 +513,7 @@ function gameClear(score) {
 }
 
 function updateHealth() {
-  document.getElementById("health").innerHTML = '<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="' + health + '" aria-valuemin="0" aria-valuemax="100" style="width:'+ health + '%">' + health + '</div>'
+  document.getElementById("health").innerHTML = '<div class="progress-bar progress-bar-dark progress-bar-striped active" role="progressbar" aria-valuenow="' + health + '" aria-valuemin="0" aria-valuemax="100" style="width:'+ health + '%">' + health + '</div>'
 }
 
 function generateShapes(xloc, yloc, poly, size) {
