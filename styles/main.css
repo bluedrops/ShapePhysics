@@ -10,6 +10,11 @@ canvas {
   max-height: 100%;
 }
 
+.progress-bar-dark {
+  background-image: none;
+  background-color: #6F7D91;
+}
+
 #vars {
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +37,7 @@ canvas {
   text-align: center;
   width: 85%;
 }
+
 
 /*canvas:active {
   cursor: pointer;

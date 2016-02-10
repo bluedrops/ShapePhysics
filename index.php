@@ -18,7 +18,7 @@
         <h1><div id = 'score'>Score: 0</div><div id = 'level'>Level: 1</div></h1>
       </div>
       <div id = "health" class="progress">
-        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">50</div>
+        <div class="progress-bar progress-bar-dark progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">50</div>
       </div>
 
       <div id = "footer" class = "footer">
